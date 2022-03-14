@@ -1,0 +1,151 @@
+{
+  "index": "index.ejs",
+  "notfound": "404.ejs",
+  "redirect": {
+    "callback": "/home",
+    "failedcallback": "/",
+    "logout": "/",
+    "deleteserver": "/servers",
+    "updateservers": "/home",
+    "createserver": "/servers",
+    "failedcreateserver": "/servers/new",
+    "modifyserver": "/servers",
+    "failedmodifyserver": "/servers/edit",
+    "setplan": "/admin",
+    "failedsetplan": "/admin",
+    "getip": "/admin",
+    "failedgetip": "/admin",
+    "createserverdisabled": "/servers?err=disabled",
+    "modifyserverdisabled": "/servers?err=disabled",
+    "deleteserverdisabled": "/servers?err=disabled",
+    "regenpassword": "/home",
+    "setresources": "/admin",
+    "failedsetresources": "/admin",
+    "renewserver": "/servers",
+    "failedrenewserver": "/servers",
+    "setcoins": "/admin",
+    "failedsetcoins": "/admin",
+    "purchaseram": "/store",
+    "failedpurchaseram": "/store",
+    "purchasedisk": "/store",
+    "failedpurchasedisk": "/store",
+    "purchasecpu": "/store",
+    "failedpurchasecpu": "/store",
+    "purchaseservers": "/store",
+    "failedpurchaseservers": "/store",
+    "arcioerror": "/home",
+    "missingorinvalidcouponcode": "/redeem",
+    "successfullyredeemedcoupon": "/redeem",
+    "couponcreationfailed": "/admin",
+    "couponcreationsuccess": "/admin",
+    "couponrevokefailed": "/admin",
+    "couponrevokesuccess": "/admin",
+    "removeaccountfailed": "/admin",
+    "removeaccountsuccess": "/admin",
+    "giftresources": "/gift",
+    "failedgiftresources": "/gift"
+  },
+  "pages": {
+    "home": "home.ejs",
+    "servers": "servers.ejs",
+    "servers/new": "create.ejs",
+    "servers/edit": "edit.ejs",
+    "admin": "admin.ejs",
+    "store": "store.ejs",
+    "afk": "arcio.ejs",
+    "redeem": "redeem.ejs",
+    "profile": "profile.ejs",
+    "special": "special.ejs",
+    "status": "status.ejs",
+    "terms-of-service": "terms-of-service.ejs",
+    "privacy-policy": "privacy-policy.ejs",
+    "changelog": "changelog.ejs",
+    "gift": "gift.ejs"
+  },
+  "mustbeloggedin": [
+    "/home",
+    "/servers",
+    "/servers/new",
+    "/servers/edit",
+    "/store", 
+    "/afk",
+    "/redeem",
+    "/gift"
+  ],
+  "mustbeadmin": [
+    "/admin"
+  ],
+  "generateafktoken": [
+    "/afk"
+  ],
+  "variables": {
+    "footerad": true,
+    "faviconlink": "https://i.imgur.com/Bz2hWKW.png",
+    "home": {
+      "title": "FoxyNodes",
+      "buttontext": {
+        "loggedin": {
+          "text": "home",
+          "link": "/home"
+        },
+        "loggedout": {
+          "_note": "Thanks For Using Our Service!",
+
+          "text": "<img src=\"https://i.imgur.com/Bz2hWKW.png\" width=\"25\" /> Login with Discord",
+          "link": "/login"
+        }
+      }
+    },
+    "dashboard": {
+      "title": "FoxyNodes"
+    },
+    "servers": {
+      "title": {
+        "list": "FoxyNodes",
+        "create": "FoxyNodes",
+        "modify": "FoxyNodes"
+      }
+    },
+    "error": {
+      "title": "FoxyNodes"
+    },
+	"status": {
+      "title": "FoxyNodes"
+    },
+    "ads": {
+      "title": "FoxyNodes"
+    },
+    "profile": {
+      "title": "FoxyNodes"
+    },
+    "terms-of-service": {
+      "title": "FoxyNodes"
+    },
+    "changelog": {
+      "title": "FoxyNodes"
+    },
+    "privacy-policy": {
+      "title": "FoxyNodes"
+    },
+    "gift": {
+      "title": "FoxyNodes"
+    },
+    "admin": {
+      "title": {
+        "default": "FoxyNodes"
+      }
+    },
+    "store": {
+      "title": "FoxyNodes"
+    },
+    "arcio": {
+      "title": "FoxyNodes"
+    },
+    "maintenance": {
+      "title": "FoxyNodes"
+    },
+    "redeem": {
+      "title": "FoxyNodes" 
+    }
+  }
+}
